@@ -6,21 +6,29 @@
     "start": "next start"
   },
   "dependencies": {
-    "@supabase/ssr": "latest",
-    "@supabase/supabase-js": "latest",
+    "@mantine/core": "^7.10.1",
+    "@mantine/hooks": "^7.10.1",
+    "@mantine/notifications": "^7.10.1",
+    "@supabase/ssr": "^0.3.0",
+    "@supabase/supabase-js": "^2.43.4",
     "autoprefixer": "10.4.17",
+    "cors": "^2.8.5",
     "geist": "^1.2.1",
-    "next": "latest",
-    "postcss": "8.4.33",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "^14.2.3",
+    "next-connect": "^1.0.0-next.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "tailwindcss": "3.4.1",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "url-metadata": "^4.1.0"
   },
   "devDependencies": {
     "@types/node": "20.11.5",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
-    "encoding": "^0.1.13"
+    "encoding": "^0.1.13",
+    "postcss": "^8.4.38",
+    "postcss-preset-mantine": "^1.15.0",
+    "postcss-simple-vars": "^7.0.1"
   }
 }

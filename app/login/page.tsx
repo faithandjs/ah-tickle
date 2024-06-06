@@ -50,7 +50,6 @@ export default function Login({
 
     return redirect("/login?message=Check email to continue sign in process");
   };
-
   return (
     <div className="flex-1 flex flex-col w-full px-8 sm:max-w-md justify-center gap-2">
       <Link
@@ -70,7 +69,7 @@ export default function Login({
           className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1"
         >
           <polyline points="15 18 9 12 15 6" />
-        </svg>{" "}
+        </svg>
         Back
       </Link>
 
