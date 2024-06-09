@@ -3,7 +3,7 @@ import { headers } from "next/headers";
 // import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
 
-import { useFormStatus } from "react-dom";
+// import { useFormStatus } from "react-dom";
 import { useState, type ComponentProps } from "react";
 import { useRouter } from "next/router";
 import { createClient } from "@/utils/supabase/component";
@@ -13,13 +13,14 @@ type Props = ComponentProps<"button"> & {
   pendingText?: string;
 };
 function SubmitButton({ children, pendingText, ...props }: Props) {
-  const { pending, action } = useFormStatus();
+  // const { pending, action } = useFormStatus();
 
-  const isPending = pending && action === props.formAction;
+  // const isPending = pending && action === props.formAction;
 
   return (
-    <button {...props} type="submit" aria-disabled={pending}>
-      {isPending ? pendingText : children}
+    <button {...props} type="submit" aria-disabled={false}>
+      {children}
+      {/* {isPending ? pendingText : children} */}
     </button>
   );
 }
